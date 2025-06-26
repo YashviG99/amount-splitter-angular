@@ -1,0 +1,18 @@
+<div style="padding: 20px; max-width: 500px; margin: auto;">
+  <h2>💸 Amount Splitter</h2>
+
+  <input type="text" [(ngModel)]="name" placeholder="Enter name" /><br><br>
+  <input type="number" [(ngModel)]="amountPaid" placeholder="Amount paid" /><br><br>
+  <button (click)="addMember()">Add Member</button>
+
+  <ul>
+    <li *ngFor="let m of members">{{ m.name }} paid ₹{{ m.amount }}</li>
+  </ul>
+
+  <button (click)="splitAmount()">Split Amount</button>
+
+  <h3 *ngIf="result.length > 0">💰 Split Results:</h3>
+  <ul>
+    <li *ngFor="let line of result">{{ line }}</li>
+  </ul>
+</div>
