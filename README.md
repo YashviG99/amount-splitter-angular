@@ -15,10 +15,6 @@ This is a simple yet powerful Angular web app that helps users *split an amount 
 - TypeScript
 - HTML5 & CSS3
 
-## 📸 Screenshot
-
-![App Screenshot](screenshot.png)
-
 ## 🧠 How to Use
 
 1. Enter the *total amount*
