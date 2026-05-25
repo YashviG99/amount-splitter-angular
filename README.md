@@ -1,139 +1,150 @@
-# 💰 Amount Splitter — Angular Web App
+💸 Amount Splitter — Angular Expense Splitter App
 
-A simple Angular web application that helps users split a total amount among multiple people.
-Useful for group trips, restaurant bills, shared expenses, or hostel cost sharing.
+A modern and responsive Angular web application that helps users split shared expenses and calculate who pays whom automatically.
 
-Built using Angular + TypeScript with a clean beginner-friendly UI.
+Perfect for:
 
----
-
-## 🚀 Features
-
-✅ Enter total amount
-✅ Enter number of people
-✅ Instantly calculates amount per person
-✅ Simple and clean UI
-✅ Beginner-friendly Angular project
+- Hostel expenses
+- Group trips
+- Restaurant bills
+- Roommate cost sharing
+- Friend groups
 
 ---
 
-## 🛠 Tech Stack
+🚀 Live Demo
 
-* Angular
-* TypeScript
-* HTML5
-* CSS3
+🌐 Live Website: https://6a140e9894510632de61168f--amountsplitterapp.netlify.app/
 
 ---
 
-## ▶️ How to Run This Project (VERY IMPORTANT)
+✨ Features
 
-### 1️⃣ Clone the repository
+✅ Add multiple members
+✅ Track amount paid by each person
+✅ Smart settlement calculation
+✅ Shows exactly who should pay whom
+✅ Clean and responsive UI
+✅ Mobile-friendly design
+✅ Real-time split results
 
-```
+---
+
+🛠️ Tech Stack
+
+- Angular
+- TypeScript
+- HTML5
+- CSS3
+
+---
+
+📸 Preview
+
+<img width="100%" alt="Amount Splitter Preview" src="https://raw.githubusercontent.com/YashviG99/amount-splitter-angular/main/preview.png">---
+
+⚙️ Installation & Setup
+
+1️⃣ Clone the repository
+
 git clone https://github.com/YashviG99/amount-splitter-angular.git
-```
 
 ---
 
-### 2️⃣ Open the project folder
+2️⃣ Open project folder
 
-⚠️ IMPORTANT:
-If you downloaded ZIP from GitHub, extract it first.
-
-Make sure you open the folder that contains:
-
-```
-angular.json
-package.json
-src/
-```
-
-Run commands ONLY inside this folder.
+cd amount-splitter-angular
 
 ---
 
-### 3️⃣ Install Node.js (Required)
+3️⃣ Install dependencies
 
-Download Node.js LTS version from:
-
-https://nodejs.org
-
-Restart your computer after installation.
-
----
-
-### 4️⃣ Install Angular CLI (only once)
-
-```
-npm install -g @angular/cli
-```
-
----
-
-### 5️⃣ Install project dependencies
-
-Inside project folder run:
-
-```
 npm install
-```
-
-Wait until it finishes.
 
 ---
 
-### 6️⃣ Run the application
+4️⃣ Run the application
 
-```
 ng serve
-```
 
 ---
 
-### 7️⃣ Open in browser
+5️⃣ Open in browser
 
-```
 http://localhost:4200
-```
 
 ---
 
-## ❗ Common Problems & Fix
+🧠 Example
 
-### 🔴 “npm not recognized”
+Input
 
-→ Install Node.js
+Name| Paid
+Yashvi| ₹0
+Ruchi| ₹347
+Smruti| ₹70
 
-### 🔴 “outside workspace error”
+Output
 
-→ You are in wrong folder
-Go inside the folder that contains `angular.json`
-
-### 🔴 “builder dev-server not found”
-
-→ Run:
-
-```
-npm install
-```
+Yashvi pays ₹139 to Ruchi
+Smruti pays ₹69 to Ruchi
 
 ---
 
-## 👩‍💻 About the Developer
+📂 Project Structure
 
-Made with ❤ by **Yashvi Gheewala**
-B.Tech IT Student
-Aspiring Software Engineer
-
-GitHub: https://github.com/YashviG99
-
----
-
-## 📜 License
-
-This project is open-source under the MIT License.
+src/
+ ├── app/
+ │    ├── app.ts
+ │    ├── app.html
+ │    └── app.css
+ └── main.ts
 
 ---
 
-⭐ If you like this project, consider giving it a star!
+🚀 Deployment
+
+This project is deployed using:
+
+- Netlify
+- GitHub
+
+---
+
+📚 What I Learned
+
+This project helped me improve my understanding of:
+
+- Angular standalone components
+- Two-way data binding
+- Form handling
+- Array/object manipulation
+- Settlement calculation logic
+- Responsive UI design
+- Git & GitHub workflow
+- Deployment with Netlify
+
+---
+
+👩‍💻 Developer
+
+Made with ❤️ by Yashvi Gheewala
+
+🎓 B.Tech IT Student
+💻 Aspiring Software Engineer
+
+🔗 GitHub: "github.com" (https://reference-url-citation.invalid/0)
+
+---
+
+⭐ Support
+
+If you like this project, consider giving it a ⭐ on GitHub!
+
+It helps support my learning journey and future projects 🚀
+
+---
+
+📜 License
+
+This project is licensed under the MIT License.
