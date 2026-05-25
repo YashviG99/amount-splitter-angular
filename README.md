@@ -50,26 +50,57 @@ Perfect for:
 git clone https://github.com/YashviG99/amount-splitter-angular.git
 
 ---
+2️⃣ Open the project folder
 
-2️⃣ Open project folder
+⚠️ IMPORTANT:
+If you downloaded ZIP from GitHub, extract it first.
+
+Make sure you open the folder that contains:
+
+angular.json  
+package.json  
+src/
+
+Run commands ONLY inside this folder.
+
+
+---
+
+3️⃣ Install Node.js (Required)
+
+Download Node.js LTS version from:
+
+https://nodejs.org
+
+Restart your computer after installation.
+
+
+---
+
+4️⃣ Install Angular CLI (only once)
+
+npm install -g @angular/cli
+
+
+5️⃣ Open project folder
 
 cd amount-splitter-angular
 
 ---
 
-3️⃣ Install dependencies
+6️⃣ Install dependencies
 
 npm install
 
 ---
 
-4️⃣ Run the application
+7️⃣ Run the application
 
 ng serve
 
 ---
 
-5️⃣ Open in browser
+8️⃣ Open in browser
 
 http://localhost:4200
 
