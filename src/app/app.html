@@ -1,18 +1,118 @@
-<div style="padding: 20px; max-width: 500px; margin: auto;">
-  <h2>💸 Amount Splitter</h2>
+<div class="container">
 
-  <input type="text" [(ngModel)]="name" placeholder="Enter name" /><br><br>
-  <input type="number" [(ngModel)]="amountPaid" placeholder="Amount paid" /><br><br>
-  <button (click)="addMember()">Add Member</button>
+  <h1 class="title">💸 Amount Splitter</h1>
 
-  <ul>
-    <li *ngFor="let m of members">{{ m.name }} paid ₹{{ m.amount }}</li>
-  </ul>
+  <p class="subtitle">
+    Add members and see who pays whom
+  </p>
 
-  <button (click)="splitAmount()">Split Amount</button>
+  <div class="card">
 
-  <h3 *ngIf="result.length > 0">💰 Split Results:</h3>
-  <ul>
-    <li *ngFor="let line of result">{{ line }}</li>
-  </ul>
+    <div class="form-row">
+
+      <div class="input-group">
+
+        <label>Enter Name</label>
+
+        <input
+          type="text"
+          [(ngModel)]="name"
+          placeholder="e.g. Yashvi"
+        />
+
+      </div>
+
+      <div class="input-group">
+
+        <label>Amount Paid (₹)</label>
+
+        <input
+          type="number"
+          [(ngModel)]="amountPaid"
+          placeholder="e.g. 1200"
+        />
+
+      </div>
+
+      <button (click)="addMember()">
+        + Add Member
+      </button>
+
+    </div>
+
+  </div>
+
+  <div class="card">
+
+    <h2 class="member-title">👥 Members</h2>
+
+    <ul class="member-list">
+
+      <li
+        class="member-item"
+        *ngFor="let m of members"
+      >
+
+        <span class="member-name">
+          {{m.name}}
+        </span>
+
+        <span class="member-amount">
+          ₹{{m.amount}}
+        </span>
+
+      </li>
+
+    </ul>
+
+    <p
+      class="empty-text"
+      *ngIf="members.length === 0"
+    >
+      No members added yet
+    </p>
+
+    <button
+      class="split-btn"
+      (click)="splitAmount()"
+    >
+      Split Amount
+    </button>
+
+  </div>
+
+  <div
+    class="card"
+    *ngIf="settlements.length > 0"
+  >
+
+    <h2 class="result-title">
+      💰 Split Results
+    </h2>
+
+    <ul class="result-list">
+
+      <li
+        class="result-item"
+        *ngFor="let s of settlements"
+      >
+
+        {{s.from}}
+
+        pays
+
+        ₹{{s.amount}}
+
+        to
+
+        <span class="highlight">
+          {{s.to}}
+        </span>
+
+      </li>
+
+    </ul>
+
+  </div>
+
 </div>
